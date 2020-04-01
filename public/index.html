@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Airbnb</title>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=BQu76RPVl3FnioQmbOZiVirCYxIiiMng"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="icon" type="text/css" href="https://z1.muscache.cn/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico" />
+		<link rel="stylesheet" type="text/css" href="./css/icons-extra.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+	<body>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="#tabbar">
+				<span class="mui-icon mui-icon-search"></span>
+				<span class="mui-tab-label">搜索</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-heart">
+				<span class="mui-icon mui-icon-extra mui-icon-extra-heart"></span>
+				<span class="mui-tab-label">心愿单</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-gushi">
+				<span class="mui-icon mui-icon-extra mui-icon-extra-holiday"></span>
+				<span class="mui-tab-label">故事</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-email">
+				<span class="mui-icon mui-icon-chatbubble"></span>
+				<span class="mui-tab-label">收件箱</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-login">
+				<span class="mui-icon mui-icon-person"></span>
+				<span class="mui-tab-label">登录</span>
+			</a>
+		</nav>
+
+		<div class="mui-content">
+			<!-- 搜索 -->
+			<div id="tabbar" class="mui-control-content mui-active">
+				<div class="swiper-container banner_search">
+					<div class="swiper-wrapper">
+
+					</div>
+					<!-- 如果需要滚动条 -->
+					<div class="swiper-scrollbar"></div>
+				</div>
+				<div class="content">
+					<!-- 房源查询 -->
+					<div id="slider" class="mui-slider">
+						<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" id="segmented">
+							<div class="mui-scroll">
+								<a class="mui-control-item mui-active" href="#item1mobile">国内</a>
+								<a class="mui-control-item" href="#item2mobile">国际/港澳台</a>
+							</div>
+						</div>
+						<div class="mui-slider-group">
+							<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+								<div class="mui-table-view">
+									<div class="check_dd">
+										<div class="dd">
+											<span class="mui-icon mui-icon-location"></span>
+											<div></div>
+										</div>
+										<div class="wz">
+											<span class="mui-icon-extra mui-icon-extra-find"></span>当前位置
+										</div>
+									</div>
+									<div class="time">
+										<span class="mui-icon-extra mui-icon-extra-calendar"></span>
+										<button type="button" class="start-time">03月14日</button>-
+										<button type="button" class="end-time">03月15日</button>
+										共1晚
+									</div>
+									<div class="search">
+										<span class="mui-icon mui-icon-search"></span>
+										<button type="button">景点/地址/房源名</button>
+									</div>
+									<div class="btn-search">
+										<button type="button">搜索房源</button>
+									</div>
+								</div>
+							</div>
+							<div id="item2mobile" class="mui-slider-item mui-control-content ">
+								<div class="mui-table-view">
+									<div class="check_dd">
+										<div class="dd">
+											<span class="mui-icon mui-icon-location"></span>
+											<div></div>
+										</div>
+										<div class="wz">
+											<span class="mui-icon-extra mui-icon-extra-find"></span>当前位置
+										</div>
+									</div>
+									<div class="time">
+										<span class="mui-icon-extra mui-icon-extra-calendar"></span>
+										<button type="button" class="start-time">03月14日</button>-
+										<button type="button" class="end-time">03月15日</button>
+										共1晚
+									</div>
+									<div class="search">
+										<span class="mui-icon mui-icon-search"></span>
+										<button type="button">景点/地址/房源名</button>
+									</div>
+									<div class="btn-search">
+										<button type="button">搜索房源</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 房源分类 -->
+					<div class="housingClassification">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+
+							</div>
+						</div>
+					</div>
+					<!-- 周租月租 -->
+					<div class="weeklyRent">
+						<h2>周租月租特惠</h2>
+						<h3>周租低至5折，月租低至3.5折</h3>
+					</div>
+					<!-- 内容 -->
+					<div class="weeklyRent_content">
+						
+					</div>
+					<!-- 你可能去的地方 -->
+					<div class="possiblePlaces">
+						<h3>你可能也想去</h3>
+						<h4>发现更多出行灵感</h4>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								
+							</div>
+						</div>
+					</div>
+					<!-- plus房源 -->
+					<div class="plusHousing">
+						<div class="plusHousing_title">
+							<h3>爱彼迎Plus房源</h3>
+							<p>品质和设计经过验证的精选房源系列</p>
+						</div>
+						<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584873354534&di=ee6b12d0ac4d6fa7b2fdbc99fff3f554&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20171117%2F2159a4f964cf4d208b781b3f44dcc086.jpeg" alt="">
+						<button type="button">浏览PLUS房源<span class="mui-icon mui-icon-forward"></span></button>
+					</div>
+					<!-- 到底 -->
+					<div class="max_but">
+						<h3>没有更多内容……</h3>
+					</div>
+				</div>
+			</div>
+			<!-- 心愿单 -->
+			<div id="tabbar-heart" class="mui-control-content">
+				<h3>心愿单</h3>
+				<p class="content">登录爱彼迎，查看你的心仪房源、体检与故事</p>
+				<div class="img">
+					<img src="img/nologin_xinyuan.png" alt="">
+				</div>
+				<button class="btn">登录</button>
+			</div>
+			<!-- 故事 -->
+			<div id="tabbar-gushi" class="mui-control-content">
+				<!-- 添加 -->
+				<button type="button" class="write">写故事<span class="mui-icon mui-icon-plusempty"></span></button>
+				<!-- 故事搜索框 -->
+				<div class="gushi_search">
+					<input type="text" class="search" placeholder="搜索泸州的民宿故事" />
+					<span class="mui-icon mui-icon-search"></span>
+				</div>
+				<!-- 分类 -->
+				<div class="feilei">
+					
+				</div>
+			</div>
+			<!-- 收件箱 -->
+			<div id="tabbar-email" class="mui-control-content">
+				<h3>收件箱</h3>
+				<p class="content">登录爱彼迎，随时随地查看你和房东的交流信息</p>
+				<div class="img">
+					<img src="img/nologin_email.png" alt="">
+				</div>
+				<button class="btn">登录</button>
+			</div>
+			<!-- 登录 -->
+			<div id="tabbar-login" class="mui-control-content">
+				<div class="login" style="display: block;">
+					<div class="login-head">
+						<div class="sz">
+							<a href="#"><span class="mui-icon mui-icon-gear"></span></a>
+						</div>
+						<div class="login-zc">
+							<div class="login-zc-out">
+								<a href="#">注册/登录</a>
+							</div>
+							<div class="img">
+								<img src="img/no_login.png">
+							</div>
+						</div>
+					</div>
+					<div class="tool">
+						<h3>行程工具</h3>
+						<div class="tools">
+							<ul class="list">
+								<a href="#">
+									<li>
+										<span class="mui-icon-extra mui-icon-extra-express"></span>
+										<div class="name">行程</div>
+									</li>
+								</a>
+								<a href="#">
+									<li>
+										<span class="mui-icon mui-icon-paperplane"></span>
+										<div class="name">历史足迹</div>
+									</li>
+								</a>
+								<a href="#">
+									<li>
+										<span class="mui-icon-extra mui-icon-extra-custom"></span>
+										<div class="name">获取帮助</div>
+									</li>
+								</a>
+							</ul>
+						</div>
+					</div>
+					<div class="becomeMan">
+						<h3>成为房东 / 体验达人</h3>
+						<div class="becomeMan_out">
+							<a href="#">
+								了解如何出租
+								<span class="mui-icon mui-icon-forward"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+			
+		</script>
+		<script src="https://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
+		<!-- <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script> -->
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<!-- <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script> -->
+		<script type="text/javascript">
+			
+		</script>
+	</body>
+</html>
